@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/d8c89bb2c3.js" crossorigin="anonymous"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -30,6 +32,9 @@
     <style>
         *{
             font-family: 'Lato', sans-serif;
+        }
+        #search{
+
         }
     </style>
 </head>
@@ -67,14 +72,120 @@
                         <li><a>All Fruits</a></li>
                     </ul>
                 </div>
-                <input type="text" placeholder="Search"
+                <input id="search" type="text" placeholder="Search"
                     class="input input-bordered lg:w-80 md:w-auto rounded-[50px] hidden md:block" />
+                    
                 <!-- <a class="btn">Button</a> -->
             </div>
         </div>
     </header>
-    <main>
+    <main class="md:container md:mx-auto">
+        <!-- Slider -->
+        <section class="mt-12">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full h-full">
+                  <!-- <img src="./images/banner1.png" class="w-full" /> -->
+                  <div class="hero min-h-[70vh] rounded-lg" style="background-image: url(./images/banner1.png);">
+                    <div class="hero-overlay bg-opacity-40"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                      <div class="">
+                        <h1 class="mb-5 text-7xl font-extrabold">Exotic tastes at your <br>doorstep</h1>
+                        <p class="mb-5 text-xl font-medium">We supply highly quality organic products</p>
+                        <button class="btn bg-primary-bg text-xl font-extrabold border-none px-7">Shop Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="hero  rounded-lg" style="background-image: url(./images/banner2.png);">
+                        <div class="hero-overlay bg-opacity-40"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                          <div class="">
+                            <h1 class="mb-5 text-7xl font-extrabold">Exotic tastes at your <br>doorstep</h1>
+                            <p class="mb-5 text-xl font-medium">We supply highly quality organic products</p>
+                            <button class="btn bg-primary-bg text-xl font-extrabold border-none px-7">Shop Now</button>
+                          </div>
+                        </div>
+                      </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="hero rounded-lg" style="background-image: url(./images/banner3.png);">
+                        <div class="hero-overlay bg-opacity-40"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                          <div class="">
+                            <h1 class="mb-5 text-7xl font-extrabold">Exotic tastes at your <br>doorstep</h1>
+                            <p class="mb-5 text-xl font-medium">We supply highly quality organic products</p>
+                            <button class="btn bg-primary-bg text-xl font-extrabold border-none px-7">Shop Now</button>
+                          </div>
+                        </div>
+                      </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="hero rounded-lg" style="background-image: url(./images/banner4.png);">
+                        <div class="hero-overlay bg-opacity-40"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                          <div class="">
+                            <h1 class="mb-5 text-7xl font-extrabold">Exotic tastes at your <br>doorstep</h1>
+                            <p class="mb-5 text-xl font-medium">We supply highly quality organic products</p>
+                            <button class="btn bg-primary-bg text-xl font-extrabold border-none px-7">Shop Now</button>
+                          </div>
+                        </div>
+                      </div>
 
+                  
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <!-- Deal of the day section -->
+        <section class="mt-12">
+            <div>
+                <div class="flex flex-col md:flex-row md:justify-between">
+                    <div class="text-center md:text-left">
+                        <h3 class="text-5xl font-extrabold">Deal of the day</h3>
+                        <p class="text-base font-normal text-[#12121299] max-w-2xl">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                    </div>
+                    <div class="flex justify-center pt-5 md:pt-0">
+                        <div>
+                            <h3 class="text-5xl font-extrabold">25 <i class="fa-solid fa-ellipsis-vertical px-2 md:px-6"></i></h3>
+                            <p class="text-base font-normal text-[#12121299] pl-2">Days</p>
+                        </div>
+                        <div>
+                            <h3 class="text-5xl font-extrabold">15 <i class="fa-solid fa-ellipsis-vertical px-2 md:px-6"></i></h3>
+                            <p class="text-base font-normal text-[#12121299] pl-2">Hours</p>
+                        </div>
+                        <div>
+                            <h3 class="text-5xl font-extrabold">25 <i class="fa-solid fa-ellipsis-vertical px-2 md:px-6"></i></h3>
+                            <p class="text-base font-normal text-[#12121299] pl-1">Minutes</p>
+                        </div>
+                        <div>
+                            <h3 class="text-5xl font-extrabold">08 </h3>
+                            <p class="text-base font-normal text-[#12121299] pl-1">Seconds</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <!-- cards -->
+                    <img src="./images/fruit7.png" alt="">
+                </div>
+            </div>
+        </section>
     </main>
 
 </body>
