@@ -50,7 +50,7 @@
             </div>
             <div class="navbar-center  lg:flex">
                 <img src="./images/logo.png" alt="">
-                <a class="btn btn-ghost normal-case text-bla md:text-white text-4xl font-bold">Fruit Burst</a>
+                <a class="btn btn-ghost normal-case text-black lg:text-white text-4xl font-bold">Fruit Burst</a>
             </div>
             <div class="navbar-end">
                 <div class="dropdown dropdown-end">
@@ -69,8 +69,13 @@
                         <li><a>All Fruits</a></li>
                     </ul>
                 </div>
-                <input id="search" type="text" placeholder="Search"
-                    class="input input-bordered lg:w-80 md:w-auto rounded-[50px] hidden lg:block" />
+                <div class="hidden lg:block">
+                    <div class="flex bg-white px-3 pr-5 rounded-[50px]">
+                        <input id="search" type="text" placeholder="Search"
+                        class="input  lg:w-80 " />
+                        <button><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+                    </div>
+                </div>
 
                 <!-- <a class="btn">Button</a> -->
             </div>
